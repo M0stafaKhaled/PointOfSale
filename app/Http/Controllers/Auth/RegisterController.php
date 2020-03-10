@@ -2,11 +2,20 @@
 
 namespace App\Http\Controllers\Auth;
 
+<<<<<<< HEAD
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+=======
+use App\Http\Controllers\Controller;
+use App\Providers\RouteServiceProvider;
+use App\User;
+use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
+>>>>>>> caf38d1c1464c48b0b8158e408d7283c37212dc1
 
 class RegisterController extends Controller
 {
@@ -28,7 +37,11 @@ class RegisterController extends Controller
      *
      * @var string
      */
+<<<<<<< HEAD
     protected $redirectTo = '/home';
+=======
+    protected $redirectTo = RouteServiceProvider::HOME;
+>>>>>>> caf38d1c1464c48b0b8158e408d7283c37212dc1
 
     /**
      * Create a new controller instance.
